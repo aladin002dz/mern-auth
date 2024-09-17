@@ -1,7 +1,7 @@
-import HomeScreen from '@/pages/HomeScreen';
-import LoginScreen from '@/pages/LoginScreen.jsx';
-import ProfileScreen from '@/pages/ProfileScreen.jsx';
-import RegisterScreen from '@/pages/RegisterScreen.jsx';
+import HomeScreen from '@/pages/Home';
+import LoginScreen from '@/pages/Login';
+import ProfileScreen from '@/pages/Profile';
+import RegisterScreen from '@/pages/Register';
 import store from '@/redux/store';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
