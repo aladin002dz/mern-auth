@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { Form, Button, Row, Col } from 'react-bootstrap';
-import FormContainer from '../components/FormContainer';
+import { setCredentials } from '@/redux/slices/authSlice';
+import { useLoginMutation } from '@/redux/slices/usersApiSlice';
+import { useEffect, useState } from 'react';
+import { Button, Col, Form, Row } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
-import { useLoginMutation } from '../slices/usersApiSlice';
-import { setCredentials } from '../slices/authSlice';
+import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import FormContainer from '../components/FormContainer';
 import Loader from '../components/Loader';
 
 const LoginScreen = () => {

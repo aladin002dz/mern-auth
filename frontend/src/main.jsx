@@ -1,21 +1,21 @@
+import HomeScreen from '@/pages/HomeScreen';
+import LoginScreen from '@/pages/LoginScreen.jsx';
+import ProfileScreen from '@/pages/ProfileScreen.jsx';
+import RegisterScreen from '@/pages/RegisterScreen.jsx';
+import store from '@/redux/store';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
+import { Provider } from 'react-redux';
 import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
 } from 'react-router-dom';
-import './index.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import store from './store';
-import { Provider } from 'react-redux';
-import HomeScreen from './screens/HomeScreen';
-import LoginScreen from './screens/LoginScreen.jsx';
-import RegisterScreen from './screens/RegisterScreen.jsx';
-import ProfileScreen from './screens/ProfileScreen.jsx';
+import App from './App.jsx';
 import PrivateRoute from './components/PrivateRoute.jsx';
+import './index.css';
 
 const router = createBrowserRouter(
   createRoutesFromElements(

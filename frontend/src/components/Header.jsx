@@ -1,11 +1,11 @@
 // import { Navbar, Nav, Container, NavDropdown, Badge } from 'react-bootstrap';
-import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
+import { logout } from '@/redux/slices/authSlice';
+import { useLogoutMutation } from '@/redux/slices/usersApiSlice';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { FaSignInAlt, FaSignOutAlt } from 'react-icons/fa';
+import { useDispatch, useSelector } from 'react-redux';
 import { LinkContainer } from 'react-router-bootstrap';
-import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { useLogoutMutation } from '../slices/usersApiSlice';
-import { logout } from '../slices/authSlice';
 
 const Header = () => {
   const { userInfo } = useSelector((state) => state.auth);
